@@ -1,0 +1,10 @@
+# Ignore local data storage (sensitive)
+hasil/data.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
