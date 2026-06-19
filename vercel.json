@@ -4,18 +4,9 @@
       "runtime": "vercel-php@0.7.3"
     }
   },
-  "routes": [
-    {
-      "src": "/style\\.css",
-      "dest": "/style.css"
-    },
-    {
-      "src": "/hasil(/?.*)",
-      "dest": "/api/hasil.php"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/api/index.php"
-    }
+  "rewrites": [
+    { "source": "/hasil", "destination": "/api/hasil.php" },
+    { "source": "/hasil/:path*", "destination": "/api/hasil.php" },
+    { "source": "/:path*", "destination": "/api/index.php" }
   ]
 }
