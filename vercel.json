@@ -1,12 +1,6 @@
 {
-  "functions": {
-    "api/**/*.php": {
-      "runtime": "vercel-php@0.7.3"
-    }
-  },
   "rewrites": [
-    { "source": "/hasil", "destination": "/api/hasil.php" },
-    { "source": "/hasil/:path*", "destination": "/api/hasil.php" },
-    { "source": "/:path*", "destination": "/api/index.php" }
+    { "source": "/submit", "destination": "/api/submit" },
+    { "source": "/hasil",  "destination": "/api/hasil"  }
   ]
 }
